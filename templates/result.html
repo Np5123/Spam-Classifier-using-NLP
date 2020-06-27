@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en",dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Spam SMS Detector</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+</head>	
+<body>
+	<div class="head">
+		<h2 class="head_heading"><span>Spam Detector</span> for SMS </h2>
+	</div>
+<div class="result">
+	{% if prediction==1 %}
+		<h1>Prediction:<span class="danger">Oh no!This is a SPAM Message</span></h1>
+		<img class="image" src="{{url_for('static',filename='danger.gif')}}" alt="SPAM Image">
+	{% elif prediction==0 %}
+		<h1>Prediction:<span class="safe">Great!This is NOT a spam Message</span></h1>
+		<img class="image1" src="{{url_for('static',filename='safe.png')}}" alt="NOT a spam Image">
+	{% endif %}
+
+</div>
+
+<div class="footer">
+	<p class="footer_des"><strong>Made by Nithya Prasath😎💙</strong></p>
+
+</div>
+
+
+</body>
+</html>

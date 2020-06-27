@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en",dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Spam SMS Detector</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+	<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+
+</head>	
+<body>
+	<div class="head">
+		<h2 class="head_heading"><span>Spam Detector</span> for SMS </h2>
+	</div>
+
+<div class="content">
+	<form action="{{url_for('predict')}}" method="POST">
+		<textarea class="box" name="message" rows='15' cols='75' placeholder="Enter your message here...."></textarea><br>
+		<input type="submit" class="button" value="Predict">
+	</form>
+</div>
+<div class="footer">
+	<p class="footer_des"><strong>Made by Nithya Prasath😎💙</strong></p>
+
+</div>
+
+
+</body>
+</html>
