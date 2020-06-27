@@ -1,4 +1,3 @@
-@sklearn @NLP @pandas @python
 
 # Spam-Classifier-using-NLP
 
